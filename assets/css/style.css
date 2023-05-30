@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;600;700&family=Reem+Kufi+Ink&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+	--color-purple: #7a00e6;
+	--color-accent: #23004c;
+	--color-gray: #f4f2f6;
+	--color-white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: var(--color-gray);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.singularity {
+	flex-grow: 2;
+	text-align: center;
+}
+header a {
+	width: 125px;
+	text-align: center;
+	text-decoration: none;
+	color: var(--color-accent);
+	margin: 0 10px;
+}
+header a:hover {
+	color: var(--color-purple);
+}
+
+strong {
+	font-family: "Reem Kufi Ink";
+	color: var(--color-accent);
+	font-size: clamp(1.5rem, 2vw, 2rem);
+}
+strong:hover {
+	color: var(--color-purple);
+}
+
+.secao {
+	margin-top: 36px;
+	height: 95vh;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.seta {
+	display: flex;
+	justify-content: flex-end;
+	height: 30%;
+	position: absolute;
+	flex-direction: column;
+	align-items: center;
+}
+
+.linha {
+	position: absolute;
+	background-color: var(--color-accent);
+	height: 95%;
+	width: 10px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.inteira {
+	height: 90%;
+}
+.ponteada {
+	border: none;
+	border-left: 5px dashed var(--color-gray);
+	border-right: 5px dashed var(--color-gray);
+}
+
+.arrow {
+	position: relative;
+	border: solid var(--color-accent);
+	border-width: 0 12px 12px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	height: 50px;
+	width: 50px;
+	bottom: 10px;
+}
+
+.titulo {
+	position: absolute;
+	top: 15%;
+	left: 0;
+	background-color: var(--color-purple);
+	width: 25%;
+	height: auto;
+	padding: 10px 20px;
+	border-radius: 0px 25px 250px 0px;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: clamp(1rem, 1vw, 1rem);
+	color: var(--color-white);
+}
+
+.accent {
+	background-color: var(--color-gray);
+}
+
+.texto {
+	position: absolute;
+	top: 40%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.separado {
+	flex-direction: row;
+	gap: 60px;
+	margin: 30px;
+}
+p {
+	font-size: clamp(1rem, 1vw, 1rem);
+	text-align: center;
+	width: 75%;
+	align-self: center;
+}
+.proxima {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	bottom: 50px;
+	justify-content: center;
+}
+.proxima i {
+	color: var(--color-accent);
+}
+.proxima i:hover {
+	color: var(--color-purple);
+}
