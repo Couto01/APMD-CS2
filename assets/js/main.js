@@ -6,6 +6,12 @@ buttons.forEach((button) => {
 	});
 });
 
+const homeButton = document.querySelector(".home");
+homeButton.addEventListener("click", () => {
+	const firstSection = document.querySelector("section");
+	firstSection.scrollIntoView({ behavior: "smooth" });
+});
+
 const sections = document.querySelectorAll("section");
 window.addEventListener("scroll", () => {
 	sections.forEach((section) => {
@@ -16,4 +22,9 @@ window.addEventListener("scroll", () => {
 			section.querySelector(".titulo").classList.remove("show");
 		}
 	});
+});
+
+document.querySelector("#hola").addEventListener("click", (e) => {
+	e.preventDefault();
+	alert("Mensagem cadastrada com sucesso!");
 });

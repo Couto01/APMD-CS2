@@ -28,6 +28,7 @@ header {
 .singularity {
 	flex-grow: 2;
 	text-align: center;
+	/* transform: translateX(24px); */
 }
 header a {
 	width: 125px;
@@ -170,6 +171,23 @@ p {
 .proxima i:hover {
 	color: var(--color-purple);
 }
+
+.home {
+	position: absolute;
+	display: flex;
+	width: 50px;
+	height: 50px;
+	bottom: 50px;
+	justify-content: center;
+	align-items: center;
+}
+.home i {
+	color: var(--color-accent);
+}
+.home i:hover {
+	color: var(--color-purple);
+}
+
 .formulario {
 	position: absolute;
 	top: 50%;
@@ -183,7 +201,7 @@ form {
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	max-width: 500px;
+
 	width: 400px;
 	padding: 20px;
 	border-radius: 10px;
@@ -209,7 +227,7 @@ form textarea {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-form button[type="submit"] {
+form button {
 	width: 100%;
 	padding: 10px;
 	border: none;
@@ -221,6 +239,71 @@ form button[type="submit"] {
 	transition: background-color 0.2s ease-in-out;
 }
 
-form button[type="submit"]:hover {
+form button:hover {
 	background-color: #0062cc;
+}
+.oculto {
+	display: none;
+}
+
+@media (max-width: 450px) {
+	.titulo {
+		animation: none;
+		width: 45%;
+		opacity: 1;
+		z-index: 1;
+	}
+	.texto {
+		top: 50%;
+	}
+	.ponteada {
+		display: none;
+	}
+	.oculto {
+		display: block;
+		color: var(--color-accent);
+	}
+	.separado {
+		margin: 5px;
+		width: 100%;
+		flex-direction: column;
+		gap: 10px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.proxima {
+		bottom: 10px;
+	}
+	.home {
+		bottom: 10px;
+	}
+	.formulario {
+		top: 50%;
+	}
+	form {
+		width: 300px;
+		font-size: 12px;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		padding: 10px;
+	}
+	form button {
+		grid-column: 2;
+	}
+	form label {
+		margin-bottom: 5px;
+	}
+	form input,
+	form select,
+	form textarea {
+		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: 350px) {
+	form {
+		width: 250px;
+	}
 }
