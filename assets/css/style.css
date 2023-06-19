@@ -282,6 +282,17 @@ form button:hover {
 	.formulario {
 		top: 50%;
 	}
+	.logos {
+		display: flex; /* Exibe os logos em uma linha */
+		justify-content: center; /* Centraliza os logos horizontalmente */
+		align-items: center; /* Centraliza os logos verticalmente */
+	  }
+	  
+	  .logos img {
+		width: 100px; /* Define a largura dos logos */
+		height: auto; /* Mantém a proporção original da altura dos logos */
+		margin-right: 10px; /* Espaçamento entre os logos */
+	  }
 	form {
 		width: 300px;
 		font-size: 12px;
